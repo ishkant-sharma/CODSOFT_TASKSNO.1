@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ishkant Sharma | web developer, student, curious.">
+  <title>Ishkant Sharma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ishkant Sharma home"><span
+        class="brand-mark">IS</span><span>ISHKANT<br>SHARMA</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact"
+        class="nav-contact">Let’s talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE TO BUILD SOMETHING GOOD</p>
+        <h1>Ideas into<br><span class="outline-word">digital</span> <span class="accent-word">reality.</span></h1>
+        <p class="intro">Hey, I’m <strong>Ishkant Sharma</strong>, an IT student and developer who enjoys turning
+          ideas into useful, thoughtful experiences.</p>
+        <div class="type-line"><span class="type-prefix">I BUILD </span><span id="typewriter"></span><span
+            class="cursor">|</span></div>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↘</span></a><a
+            class="text-link" href="#contact">Get in touch <span>↗</span></a></div>
+        <div class="hero-meta"><span>BASED IN INDIA</span><span class="meta-line"></span><span>STUDENT · DEVELOPER</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-photo-frame"><img src="assets/hero-profile.png" alt="Ishkant smiling by a waterfront at dusk">
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-symbol">✳</span> BUILD / LEARN / REPEAT</div>
+        <div class="floating-tag tag-bottom"><span class="mini-dot"></span> CURRENTLY LEARNING <b>DSA + WEB DEV</b>
+        </div>
+        <span class="vertical-note">SCROLL TO EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="section-kicker"><span>01 / ABOUT ME</span><span class="kicker-rule"></span><span>A LITTLE CONTEXT</span>
+      </div>
+      <div class="about-grid">
+        <!-- <div class="about-image-wrap reveal"><img src="assets/about-profile.png"
+            alt="Ishkant in a plum formal suit"><span class="image-caption">A LITTLE MORE ABOUT ME <span>↗</span></span>
+        </div> -->
+        <div class="about-copy">
+          <p class="eyebrow">NOT JUST CODE ON A SCREEN</p>
+          <h2 class="about-statement reveal-text">I like building things that feel <em>simple,</em> work <em>smart,</em>
+            and make an <em>impact.</em></h2>
+          <p class="body-copy">I’m pursuing B.Tech in Information Technology and exploring the intersection of
+            problem-solving, clean interfaces, and practical software. I care about learning by doing from the first
+            sketch to the final detail.</p>
+          <div class="about-facts">
+            <div><strong>01</strong><span>Curious by default</span></div>
+            <div><strong>02</strong><span>Detail-oriented</span></div>
+            <div><strong>03</strong><span>Always improving</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-wrap" id="skills">
+      <div class="section-kicker"><span>02 / TOOLKIT</span><span class="kicker-rule"></span><span>TOOLS I WORK
+          WITH</span></div>
+      <div class="section-heading">
+        <h2>My <span class="accent-word">stack.</span></h2>
+        <p>Still learning. Always experimenting.<br>Here’s the toolkit I’m growing with.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <div class="skill-icon html-icon">5</div><span class="skill-index">01</span>
+          </div>
+          <h3>HTML5</h3>
+          <p>Structure & accessibility</p>
+          <div class="progress-meta"><span>CONFIDENCE</span><b>85%</b></div>
+          <div class="progress"><span data-progress="85"></span></div>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <div class="skill-icon css-icon">✳</div><span class="skill-index">02</span>
+          </div>
+          <h3>CSS3</h3>
+          <p>Layout, motion & visual design</p>
+          <div class="progress-meta"><span>CONFIDENCE</span><b>80%</b></div>
+          <div class="progress"><span data-progress="80"></span></div>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <div class="skill-icon js-icon">JS</div><span class="skill-index">03</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interactions & logic</p>
+          <div class="progress-meta"><span>CONFIDENCE</span><b>65%</b></div>
+          <div class="progress"><span data-progress="65"></span></div>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <div class="skill-icon cpp-icon">C++</div><span class="skill-index">04</span>
+          </div>
+          <h3>C / C++</h3>
+          <p>Programming fundamentals</p>
+          <div class="progress-meta"><span>CONFIDENCE</span><b>75%</b></div>
+          <div class="progress"><span data-progress="75"></span></div>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <div class="skill-icon db-icon">DB</div><span class="skill-index">05</span>
+          </div>
+          <h3>SQL / MySQL</h3>
+          <p>Queries & data modelling</p>
+          <div class="progress-meta"><span>CONFIDENCE</span><b>70%</b></div>
+          <div class="progress"><span data-progress="70"></span></div>
+        </article>
+        <article class="skill-card skill-note reveal"><span class="note-star">✳</span>
+          <p>Good work comes from curiosity, consistency, and being willing to start again.</p><a href="#contact">Have a
+            project in mind? ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-wrap" id="projects">
+      <div class="section-kicker"><span>03 / SELECTED WORK</span><span class="kicker-rule"></span><span>MADE WITH
+          INTENT</span></div>
+      <div class="section-heading">
+        <h2>Things I’ve <span class="accent-word">made.</span></h2>
+        <p>A few projects that reflect my<br>curiosity across software and hardware.</p>
+      </div>
+      <div class="project-list">
+        <article class="project-card reveal">
+          <div class="project-art art-one">
+            <div class="art-topline"><span>PROJECT / 001</span><span>HARDWARE + IOT</span></div>
+            <div class="road-graphic">
+              <div class="road-light"></div>
+              <div class="road-lines"></div>
+              <div class="road-label">ENERGY<br>IN MOTION.</div>
+              <div class="streetlight"></div>
+            </div><span class="art-foot">PIEZOELECTRIC SYSTEM</span>
+          </div>
+          <div class="project-info">
+            <div class="project-title-row"><span class="project-number">01</span>
+              <h3>Piezoelectric Smart Road</h3><span class="project-arrow">↗</span>
+            </div>
+            <p>A prototype concept that harvests energy from pressure and uses stored power to support automatic street
+              lighting.</p>
+            <div class="project-details">
+              <div><span>ROLE</span><b>Hardware & concept</b></div>
+              <div><span>FOCUS</span><b>Energy harvesting</b></div>
+              <div><span>STATUS</span><b>Academic prototype</b></div>
+            </div>
+            <div class="tech-tags"><span>Piezoelectric</span><span>BC548</span><span>Sensors</span><span>LED</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-reverse reveal">
+          <div class="project-art art-two">
+            <div class="art-topline"><span>PROJECT / 002</span><span>WEB + LOGIC</span></div>
+            <div class="simon-board"><span class="simon-tile tile-a"></span><span class="simon-tile tile-b"></span><span
+                class="simon-tile tile-c"></span><span class="simon-tile tile-d"></span>
+              <div class="simon-center">SIMON<br><small>SAYS</small></div>
+            </div><span class="art-foot">MEMORY GAME</span>
+          </div>
+          <div class="project-info">
+            <div class="project-title-row"><span class="project-number">02</span>
+              <h3>Simon Says Game</h3><span class="project-arrow">↗</span>
+            </div>
+            <p>A browser-based memory game built around sequence recall, responsive input, and progressively challenging
+              rounds.</p>
+            <div class="project-details">
+              <div><span>ROLE</span><b>Frontend developer</b></div>
+              <div><span>FOCUS</span><b>Interaction & logic</b></div>
+              <div><span>STATUS</span><b>Learning project</b></div>
+            </div>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-three">
+            <div class="art-topline"><span>PROJECT / 003</span><span>PERSONAL BRAND</span></div>
+            <div class="portfolio-art"><span>PORTFOLIO</span><strong>MAKE<br>IT <i>MATTER.</i></strong>
+              <div class="portfolio-circles"><b></b><b></b><b></b></div>
+            </div><span class="art-foot">THIS WEBSITE</span>
+          </div>
+          <div class="project-info">
+            <div class="project-title-row"><span class="project-number">03</span>
+              <h3>Animated Portfolio</h3><span class="project-arrow">↗</span>
+            </div>
+            <p>A responsive personal space blending oversized editorial typography, a dark visual system, motion, and a
+              clear project story.</p>
+            <div class="project-details">
+              <div><span>ROLE</span><b>Design & development</b></div>
+              <div><span>FOCUS</span><b>Responsive UI</b></div>
+              <div><span>STATUS</span><b>In progress</b></div>
+            </div>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resume section-wrap" id="resume">
+      <div class="resume-panel reveal">
+        <div class="resume-orb">↓</div>
+        <div>
+          <p class="eyebrow">04 / THE FORMAL STUFF</p>
+          <h2>Want the full<br><span class="accent-word">story?</span></h2>
+          <p>Download my resume for a concise overview of my education, skills, and experience.</p>
+        </div><a class="button button-primary" href="resume.pdf" download>Download resume <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="section-kicker"><span>05 / CONTACT</span><span class="kicker-rule"></span><span>YOUR TURN</span></div>
+      <div class="contact-grid">
+        <div>
+          <p class="eyebrow">GOT A GOOD IDEA?</p>
+          <h2>Let’s make<br>something <span class="accent-word">real.</span></h2>
+          <p class="body-copy">Have a project, opportunity, or just want to talk tech? My inbox is open.</p>
+        </div>
+        <div class="contact-card"><span class="contact-label">START A CONVERSATION</span><a class="contact-email"
+            href="mailto:your.email@example.com">ishkantsharma2907@gmail.com <span>↗</span></a>
+          <div class="contact-divider"></div>
+          <div class="contact-row"><span>NAME</span><b>Ishkant Sharma</b></div>
+          <div class="contact-row"><span>LINKEDIN</span><a href="https://www.linkedin.com/" target="_blank"
+              rel="noreferrer">Connect with me ↗</a></div>
+          <div class="contact-row"><span>GITHUB</span><a href="https://github.com/" target="_blank"
+              rel="noreferrer">View my repositories ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">IS<span>✳</span></a>
+    <p>Designed with curiosity. Built with intention.</p><span>© <span id="year"></span> ISHKANT SHARMA. ALL RIGHTS
+      RESERVED.</span><a href="#home" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
